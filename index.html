@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#082b27">
+  <meta name="color-scheme" content="light">
+  <title>Jeunes Compagnons, grands héros | Institut de l’Excellence</title>
+  <meta name="description" content="Découvrez huit parcours de compagnons du Prophète ﷺ, racontés et commentés pour inspirer la jeunesse. Édition enrichie à lire et télécharger gratuitement.">
+  <meta name="author" content="Institut de l’Excellence">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <!-- Pour un aperçu social fiable, renseigner l’URL publique avec configurer_url.py après publication. -->
+  <link rel="canonical" href="__PUBLIC_URL__">
+  <meta property="og:type" content="book">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Institut de l’Excellence">
+  <meta property="og:title" content="Jeunes Compagnons, grands héros — Nouvelle édition enrichie">
+  <meta property="og:description" content="Huit destins de foi, de science et de courage. Une édition commentée pour la jeunesse musulmane, à lire gratuitement.">
+  <meta property="og:url" content="__PUBLIC_URL__">
+  <meta property="og:image" content="__OG_IMAGE_URL__">
+  <meta property="og:image:secure_url" content="__OG_IMAGE_URL__">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jeunes Compagnons, grands héros — Nouvelle parution de l’Institut de l’Excellence">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jeunes Compagnons, grands héros">
+  <meta name="twitter:description" content="8 compagnons. 8 parcours inspirants. Une édition enrichie à lire gratuitement.">
+  <meta name="twitter:image" content="__OG_IMAGE_URL__">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" as="image" href="assets/couverture.jpg">
+  <style>
+  :root{--forest:#072b27;--forest-2:#0e4038;--deep:#031c1b;--green:#2d6b59;--gold:#d6b56b;--gold-dark:#967337;--cream:#fffaf0;--sand:#eee4d0;--ink:#20332e;--muted:#66746c;--line:#dfd7c5;--radius:22px}
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:86px}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  body::selection{background:#e4cb84;color:var(--deep)}
+  a{color:inherit}button,a{touch-action:manipulation}button{font:inherit;cursor:pointer}
+  .container{max-width:1160px;padding:0 26px;margin:0 auto}
+  .sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+  .site-header{z-index:20;position:sticky;top:0;background:#072b27ed;backdrop-filter:blur(18px);border-bottom:1px solid #d6b56b35;color:white}
+  .header-inner{min-height:76px;display:flex;align-items:center;gap:18px;justify-content:space-between}
+  .brand{display:flex;gap:12px;align-items:center;text-decoration:none;line-height:1.1}
+  .brand-symbol{border:1px solid #d6b56b72;color:var(--gold);display:grid;place-items:center;height:45px;width:45px;border-radius:11px}
+  .brand-symbol svg{width:27px;height:27px;stroke-width:1.5}
+  .brand strong{font-family:Georgia,'Times New Roman',serif;text-transform:uppercase;font-weight:500;letter-spacing:.085em;font-size:13px;display:block}
+  .brand small{color:#e4c981;font-size:10px;letter-spacing:.17em;text-transform:uppercase}
+  nav{display:flex;gap:29px;align-items:center}
+  nav a{text-decoration:none;font-size:13px;color:#e6e8df;font-weight:600}
+  nav a:hover{color:var(--gold)}
+  .nav-pill{border:1px solid #d6b56b9e;border-radius:100px;padding:9px 17px;color:var(--gold)!important}
+  .hero{background: radial-gradient(circle at 71% 30%,#275f506e,transparent 42%),radial-gradient(circle at 5% 100%,#19463b,transparent 45%),linear-gradient(155deg,#092e2b,#051e20 74%);color:white;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;inset:0;background-image:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"%3E%3Cpath d="M60 8 70 31 93 41 70 51 60 74 50 51 27 41 50 31Z" fill="none" stroke="%23d6b56b" stroke-opacity=".09" stroke-width="1"/%3E%3C/svg%3E');opacity:.45;pointer-events:none}
+  .hero-grid{position:relative;min-height:650px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px;padding-top:62px;padding-bottom:80px}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;letter-spacing:.17em;text-transform:uppercase;font-size:11px;font-weight:800;color:var(--gold)}
+  .eyebrow:before{content:"";display:block;width:27px;height:1px;background:var(--gold)}
+  h1,h2,h3,.quote{font-family:Georgia,'Times New Roman',serif;font-weight:500}
+  h1{font-size:clamp(52px,6.4vw,92px);line-height:.99;letter-spacing:-.048em;margin:22px 0 26px;max-width:700px}
+  h1 em{font-style:normal;color:var(--gold)}
+  .hero-lead{font-size:clamp(17px,1.6vw,20px);line-height:1.72;color:#e7ece4;max-width:630px;margin:0 0 27px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 31px}
+  .hero-meta span{font-size:12px;letter-spacing:.015em;border:1px solid #ead7a44f;border-radius:100px;padding:6px 13px;color:#e7dfcd}
+  .actions{display:flex;flex-wrap:wrap;gap:13px}
+  .btn{border:1px solid transparent;border-radius:100px;padding:14px 23px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-size:14px;font-weight:750;text-decoration:none;transition:transform .2s,background .2s,border-color .2s;white-space:nowrap}
+  .btn:hover{transform:translateY(-2px)}
+  .btn svg{width:19px;height:19px;flex:none}
+  .btn-primary{background:var(--gold);color:var(--deep);box-shadow:0 8px 30px #0003}
+  .btn-primary:hover{background:#ebcd86}
+  .btn-ghost{border-color:#e4cc8a8a;color:#fff;background:#ffffff0c}
+  .btn-ghost:hover{background:#ffffff1c}
+  .btn-secondary{border-color:#bed2c4;background:#fff;color:#133a32}
+  .cover-col{display:flex;justify-content:center;align-items:center;min-width:0;position:relative}
+  .cover-col:before{content:"";position:absolute;width:80%;aspect-ratio:1;background:radial-gradient(circle,#e4bd7442,transparent 65%);filter:blur(12px)}
+  .cover{position:relative;width:min(370px,85%);height:auto;box-shadow:15px 23px 60px #0009,-3px 0px 0 #e7c97c;transform:rotate(3deg);border-radius:5px;transition:transform .4s}
+  .cover:hover{transform:rotate(0deg) scale(1.015)}
+  .cover-note{position:absolute;bottom:5%;right:-1%;background:#fffaf1;color:#234138;max-width:180px;padding:13px 18px;border-radius:13px;box-shadow:0 15px 40px #0004;transform:rotate(-5deg);font-size:12px;line-height:1.5;font-weight:750}
+  .cover-note strong{display:block;color:#967337;font-size:19px;font-family:Georgia,serif}
+  .section{padding:95px 0}
+  .section-head{text-align:center;max-width:720px;margin:0 auto 46px}
+  .section-head .eyebrow{color:#9b763e}
+  .section-head h2{font-size:clamp(34px,4.2vw,52px);line-height:1.14;letter-spacing:-.035em;margin:13px 0 15px;color:var(--forest)}
+  .section-head p{color:var(--muted);margin:0;font-size:16px}
+  .intro{background:linear-gradient(#fffaf0,#faf3e6)}
+  .feature-row{display:grid;grid-template-columns:repeat(3,1fr);gap:21px}
+  .feature{border:1px solid #e8ddc7;background:#fffcf5;border-radius:19px;padding:29px 26px;box-shadow:0 15px 35px #32453608}
+  .iconbox{width:48px;height:48px;border:1px solid #d9c99d;border-radius:13px;display:grid;place-items:center;background:#f5ebd7;color:#856c33}
+  .iconbox svg{width:25px;height:25px}
+  .feature h3{font-size:23px;color:var(--forest);margin:15px 0 9px}
+  .feature p{color:#68766e;font-size:14px;margin:0}
+  .stories{background:#fff;}
+  .stories-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .story{border:1px solid #e9e4d9;border-radius:16px;padding:24px 20px;position:relative;min-height:172px;background:linear-gradient(135deg,#fffdf9,#faf7ef);transition:box-shadow .2s,transform .2s}
+  .story:hover{box-shadow:0 15px 33px #183b2d16;transform:translateY(-4px)}
+  .story .n{font:italic 27px Georgia,serif;color:#c2a260;display:block;margin-bottom:6px}
+  .story h3{font-size:19px;color:#103f35;line-height:1.22;margin:0 0 10px}
+  .story p{margin:0;font-size:13px;color:#63746c;line-height:1.6}
+  .quote-section{background:var(--forest);color:white;padding:70px 0;text-align:center}
+  .quote-section .eyebrow{justify-content:center}
+  .quote-section .quote{font-size:clamp(27px,3.3vw,42px);line-height:1.35;max-width:850px;margin:18px auto 14px}
+  .quote-section .credit{font-size:12px;letter-spacing:.06em;color:#c9d1bf}
+  .share{background:#f7f0e2}
+  .share-layout{display:grid;grid-template-columns: .8fr 1.2fr;gap:55px;align-items:center}
+  .share-layout h2{font-size:clamp(34px,4vw,51px);line-height:1.12;color:var(--forest);margin:13px 0}
+  .share-layout p{color:#5f7064;font-size:15px;margin:0 0 20px}
+  .share-card{border-radius:24px;background:#fffdfa;border:1px solid #e4d9bf;padding:25px;box-shadow:0px 18px 50px #344d3110}
+  .share-card img{width:100%;border-radius:12px;height:auto;display:block;aspect-ratio:1200/630;object-fit:cover}
+  .share-card h3{font-size:22px;color:var(--forest);margin:21px 0 4px}
+  .share-card p{margin:0 0 15px;color:#68766e;font-size:13px}
+  .socials{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .social{display:flex;align-items:center;justify-content:center;gap:9px;background:#f9f8f2;border:1px solid #e9e5da;border-radius:11px;padding:12px 11px;font-size:13px;font-weight:740;color:#263e36;text-decoration:none}
+  .social:hover{background:#edf5ed;border-color:#b5cdba}
+  .social svg{height:19px;width:19px}
+  .social-wa{background:#eff8ef;color:#176442}
+  .social-telegram{color:#247eaa}
+  .copy-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}
+  .copy-actions button{flex:1;background:#123d33;color:white;border:0;border-radius:11px;padding:13px 15px;font-weight:760;font-size:13px;min-width:180px}
+  .copy-actions button+button{background:#eee8d9;color:#2f453a}
+  .download{background:linear-gradient(160deg,#0c3a32,#062824);color:#fff;padding:80px 0}
+  .download-inner{display:flex;align-items:center;justify-content:space-between;gap:38px}
+  .download h2{font-size:clamp(34px,4vw,50px);line-height:1.13;margin:12px 0}
+  .download p{margin:0;color:#d7e4d9;max-width:620px}
+  .disclaimer{font-size:12px;color:#718077;line-height:1.8;max-width:850px;margin:26px auto 0;text-align:center}
+  footer{background:#041f1e;color:#d6ddcf;padding:35px 0}
+  .footer-grid{display:flex;justify-content:space-between;align-items:center;gap:18px}
+  footer p{margin:0;font-size:12px;color:#afc2b3}
+  footer a{color:#e0cb8f;text-decoration:none;font-size:13px}
+  .toast{position:fixed;bottom:24px;left:50%;z-index:50;transform:translate(-50%,20px);background:#0b302b;color:#fff;box-shadow:0 20px 45px #0004;border-radius:100px;padding:12px 22px;font-size:13px;pointer-events:none;opacity:0;transition:opacity .2s,transform .2s;max-width:calc(100vw - 30px);text-align:center}
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+  .mobilebar{display:none}
+  :focus-visible{outline:3px solid #b39141;outline-offset:3px}
+  @media(max-width:1000px){.hero-grid{gap:18px}.stories-grid{grid-template-columns:repeat(2,1fr)}.cover-note{right:-2%}}
+  @media(max-width:760px){.container{padding:0 20px}.site-header .header-inner{min-height:68px}.brand strong{font-size:11px}.brand-symbol{width:40px;height:40px}nav{gap:12px}nav a:not(.nav-pill){display:none}nav .nav-pill{font-size:11px;padding:8px 12px}
+  .hero-grid{grid-template-columns:1fr;min-height:0;padding-top:55px;padding-bottom:62px;gap:42px}.hero-copy{text-align:center}.hero h1{font-size:clamp(49px,10.7vw,76px);margin:16px auto 24px}.hero-lead{margin:0 auto 25px}.hero-meta,.actions{justify-content:center}.hero .eyebrow{justify-content:center}.hero .eyebrow:before{display:none}.cover{width:min(320px,72%);max-height:460px;object-fit:cover;object-position:top}.cover-note{right:7%;bottom:5%;max-width:150px}.section{padding:65px 0}.section-head{margin-bottom:32px}.feature-row{grid-template-columns:1fr}.feature{padding:23px}.share-layout{grid-template-columns:1fr;gap:25px}.share-card{padding:16px}.download-inner{display:block;text-align:center}.download-inner .actions{margin-top:28px}.download{padding:60px 0}.footer-grid{flex-direction:column;text-align:center}.mobilebar{display:flex;position:sticky;bottom:0;z-index:18;background:#fff8ed;box-shadow:0 -4px 28px #1835282b;padding:12px 20px calc(12px + env(safe-area-inset-bottom));justify-content:center;gap:8px}.mobilebar .btn{padding:11px 18px;font-size:12px;flex:1}.mobilebar .btn-ghost{border-color:#bccdb7;background:#fff;color:#234439}}
+  @media(max-width:490px){h1{letter-spacing:-.055em}.stories-grid{grid-template-columns:1fr}.story{min-height:0}.hero-lead{font-size:15px}.cover{width:77%}.cover-note{right:0}.section-head h2{font-size:35px}.socials{grid-template-columns:1fr 1fr}.social{font-size:12px;padding:11px 7px}.copy-actions button{min-width:0;flex-basis:100%}.hero-meta{gap:7px}.hero-meta span{font-size:11px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="book" viewBox="0 0 24 24"><path d="M12 7v14m0-14C9 4.5 5.3 4 2 4v14c3.5 0 7 1 10 3m0-14c3-2.5 6.7-3 10-3v14c-3.5 0-7 1-10 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="share-icon" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="link" viewBox="0 0 24 24"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-2 2m3 4a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l2-2" stroke="currentColor" fill="none" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="lamp" viewBox="0 0 24 24"><path d="M9 18h6m-5 3h4m-2-19a7 7 0 0 0-4 13c.5.5 1 1.5 1 2h6c0-.5.5-1.5 1-2a7 7 0 0 0-4-13Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/></symbol><symbol id="star" viewBox="0 0 24 24"><path d="m12 2 2.6 6.9 7.4 3.1-7.4 3.1L12 22l-2.6-6.9L2 12l7.4-3.1z" stroke="currentColor" fill="none" stroke-width="1.5"/></symbol></svg>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="#accueil" aria-label="Institut de l’Excellence, accueil"><span class="brand-symbol"><svg><use href="#book"/></svg></span><span><strong>Institut de<br>l’Excellence</strong><small>Maison d’édition</small></span></a><nav aria-label="Navigation principale"><a href="#ouvrage">Le livre</a><a href="#portraits">Les compagnons</a><a href="#partager">Partager</a><a class="nav-pill" href="assets/livre.pdf" target="_blank" rel="noopener">Lire le PDF</a></nav></div></header>
+  <main id="accueil">
+    <section class="hero"><div class="container hero-grid"><div class="hero-copy">
+       <span class="eyebrow">Collection « Héritages et modèles »</span>
+       <h1>Jeunes<br>Compagnons,<br><em>grands héros.</em></h1>
+       <p class="hero-lead">Huit destins extraordinaires de compagnons du Prophète ﷺ. Une invitation à découvrir leur foi, leur science, leur courage et leurs enseignements pour notre époque.</p>
+       <div class="hero-meta"><span>Nouvelle édition enrichie</span><span>8 biographies commentées</span><span>Lecture gratuite</span></div>
+       <div class="actions"><a class="btn btn-primary" href="assets/livre.pdf" target="_blank" rel="noopener"><svg><use href="#book"/></svg> Lire le livre</a><a class="btn btn-ghost" href="assets/livre.pdf" download="Jeunes_Compagnons_Grands_Heros_Institut_Excellence.pdf"><svg><use href="#download"/></svg> Télécharger le PDF</a></div>
+     </div><div class="cover-col"><img class="cover" src="assets/couverture.jpg" alt="Couverture de Jeunes Compagnons, grands héros, édité par l’Institut de l’Excellence" width="1000" height="1700" fetchpriority="high"><div class="cover-note"><strong>8 parcours</strong> Pour inspirer la jeunesse d’aujourd’hui</div></div></div></section>
+
+    <section class="section intro" id="ouvrage"><div class="container"><div class="section-head"><span class="eyebrow">Un livre à découvrir et transmettre</span><h2>Des vies anciennes, des leçons toujours actuelles</h2><p>Une édition pensée pour lire les biographies avec intérêt, comprendre ce que les sources permettent d’affirmer et passer de l’admiration à l’action.</p></div>
+      <div class="feature-row"><article class="feature"><span class="iconbox"><svg><use href="#book"/></svg></span><h3>Huit récits accessibles</h3><p>Des parcours de foi, de service, d’apprentissage et de responsabilité, présentés dans leur contexte historique.</p></article><article class="feature"><span class="iconbox"><svg><use href="#lamp"/></svg></span><h3>Des commentaires enrichis</h3><p>Des éclairages spirituels et pédagogiques, avec une distinction entre faits rapportés et interprétations éditoriales.</p></article><article class="feature"><span class="iconbox"><svg><use href="#star"/></svg></span><h3>Des applications concrètes</h3><p>Des ateliers, questions de réflexion et pistes d’action pour relier la lecture aux situations d’aujourd’hui.</p></article></div>
+    </div></section>
+
+    <section class="section stories" id="portraits"><div class="container"><div class="section-head"><span class="eyebrow">Au fil des chapitres</span><h2>Huit compagnons, huit chemins vers l’excellence</h2><p>La grandeur peut se manifester dans la connaissance, la douceur, la parole juste et le sens du devoir.</p></div>
+       <div class="stories-grid"><article class="story"><span class="n">01</span><h3>Mus‘ab ibn ‘Umayr</h3><p>La liberté intérieure et la fidélité à ses principes.</p></article><article class="story"><span class="n">02</span><h3>Zayd ibn Thâbit</h3><p>La science, la rigueur et la transmission.</p></article><article class="story"><span class="n">03</span><h3>‘Abd Allâh ibn ‘Abbâs</h3><p>La quête du savoir et l’art de raisonner.</p></article><article class="story"><span class="n">04</span><h3>Usâma ibn Zayd</h3><p>La confiance et la responsabilité malgré la jeunesse.</p></article><article class="story"><span class="n">05</span><h3>Ja‘far ibn Abî Tâlib</h3><p>La force d’une parole juste et réfléchie.</p></article><article class="story"><span class="n">06</span><h3>‘Abd Allâh ibn ‘Umar</h3><p>La constance et l’attention à la Sunna.</p></article><article class="story"><span class="n">07</span><h3>Anas ibn Mâlik</h3><p>La douceur et la pédagogie du quotidien.</p></article><article class="story"><span class="n">08</span><h3>Hanzala ibn Abî ‘Âmir</h3><p>Le courage et le sens des priorités.</p></article></div>
+    </div></section>
+
+    <section class="quote-section"><div class="container"><span class="eyebrow">L’esprit du livre</span><p class="quote">« La jeunesse peut devenir une force de science, de service et de caractère. »</p><span class="credit">Synthèse éditoriale — Institut de l’Excellence</span></div></section>
+
+    <section class="section share" id="partager"><div class="container share-layout"><div><span class="eyebrow">Faire circuler le bien</span><h2>Un livre à lire, à offrir et à partager.</h2><p>Transmettez cet ouvrage à vos proches, à des jeunes, à des parents ou à des éducateurs. Un simple partage peut devenir le début d’une belle lecture.</p><div class="actions"><button class="btn btn-primary" id="nativeShare" type="button"><svg><use href="#share-icon"/></svg> Partager cette page</button><a class="btn btn-secondary" href="assets/livre.pdf" download="Jeunes_Compagnons_Grands_Heros_Institut_Excellence.pdf">Télécharger</a></div></div>
+      <div class="share-card"><img src="assets/miniature-og.jpg" alt="Miniature de partage : Jeunes Compagnons, grands héros" width="1200" height="630" loading="eager"><h3>Envoyer à votre entourage</h3><p>Choisissez le réseau sur lequel vous souhaitez faire connaître l’ouvrage.</p>
+         <div class="socials"><a href="#partager" class="social social-wa" data-social="whatsapp" aria-label="Partager sur WhatsApp"><svg><use href="#share-icon"/></svg> WhatsApp</a><a href="#partager" class="social social-telegram" data-social="telegram" aria-label="Partager sur Telegram"><svg><use href="#share-icon"/></svg> Telegram</a><a href="#partager" class="social" data-social="facebook" aria-label="Partager sur Facebook"><svg><use href="#share-icon"/></svg> Facebook</a><a href="#partager" class="social" data-social="x" aria-label="Partager sur X"><svg><use href="#share-icon"/></svg> X / Twitter</a></div>
+         <div class="copy-actions"><button id="copyLink" type="button">Copier le lien</button><button id="copyPost" type="button">Copier le message de partage</button></div>
+      </div></div><div class="container"><p class="disclaimer">Cette édition distingue les sources attestées, les récits historiques et les commentaires pédagogiques. Elle constitue une initiation, non un traité exhaustif de critique historique ni un avis juridique religieux.</p></div></section>
+
+    <section class="download"><div class="container download-inner"><div><span class="eyebrow">Édition commentée · Novembre 2026</span><h2>La lecture commence ici.</h2><p>Un ouvrage de l’Institut de l’Excellence — collection « Héritages et modèles ». Lecture et téléchargement du PDF sans inscription.</p></div><div class="actions"><a class="btn btn-primary" href="assets/livre.pdf" target="_blank" rel="noopener"><svg><use href="#book"/></svg> Ouvrir le livre</a></div></div></section>
+  </main>
+  <footer><div class="container footer-grid"><div class="brand"><span class="brand-symbol"><svg><use href="#book"/></svg></span><span><strong>Institut de l’Excellence</strong><small>Héritages et modèles</small></span></div><p>© 2026 Institut de l’Excellence. Partagez la connaissance.</p><a href="#accueil">Retour en haut ↑</a></div></footer>
+  <div class="mobilebar" aria-label="Actions rapides"><a class="btn btn-primary" href="assets/livre.pdf" target="_blank" rel="noopener"><svg><use href="#book"/></svg> Lire le PDF</a><button class="btn btn-ghost" type="button" id="mobileShare"><svg><use href="#share-icon"/></svg> Partager</button></div>
+  <div role="status" aria-live="polite" class="toast" id="toast"></div>
+  <script>
+  (()=>{
+    const title='Jeunes Compagnons, grands héros — Institut de l’Excellence';
+    const post='📖 Jeunes Compagnons, grands héros — Nouvelle édition enrichie de l’Institut de l’Excellence. Découvrez 8 parcours de compagnons du Prophète ﷺ, avec des commentaires et des leçons concrètes pour aujourd’hui. À lire et à partager !';
+    const isPublished=location.protocol==='https:'||location.protocol==='http:';
+    const pageUrl=()=>location.href.split('#')[0].split('?')[0];
+    const toast=document.getElementById('toast');let timer;
+    function say(message){toast.textContent=message;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),3600)}
+    async function copy(content,what){try{await navigator.clipboard.writeText(content);say(what+' copié !')}catch(e){const t=document.createElement('textarea');t.value=content;document.body.append(t);t.select();try{document.execCommand('copy');say(what+' copié !')}catch(_){say('Copie indisponible sur ce navigateur')}t.remove()}}
+    function published(){if(isPublished)return true;say('Les partages par lien seront disponibles après la mise en ligne.');return false}
+    function socialUrl(kind){const u=encodeURIComponent(pageUrl()),t=encodeURIComponent(post);return ({whatsapp:'https://api.whatsapp.com/send?text='+t+'%0A'+u,telegram:'https://t.me/share/url?url='+u+'&text='+t,facebook:'https://www.facebook.com/sharer/sharer.php?u='+u,x:'https://twitter.com/intent/tweet?text='+t+'&url='+u})[kind]}
+    document.querySelectorAll('[data-social]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();if(published())window.open(socialUrl(el.dataset.social),'_blank','noopener,noreferrer')}));
+    document.getElementById('copyLink').addEventListener('click',()=>published()&&copy(pageUrl(),'Lien'));
+    document.getElementById('copyPost').addEventListener('click',()=>copy(post+(isPublished?'\n'+pageUrl():''),'Message')); 
+    async function share(){if(!published())return;try{if(navigator.share)await navigator.share({title,text:post,url:pageUrl()});else await copy(pageUrl(),'Lien')}catch(e){if(e.name!=='AbortError')await copy(pageUrl(),'Lien')}}
+    document.getElementById('nativeShare').addEventListener('click',share);
+    document.getElementById('mobileShare').addEventListener('click',share);
+  })();
+  </script>
+</body>
+</html>
