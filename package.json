@@ -1,13 +1,10 @@
 {
   "name": "jeunes-compagnons-grands-heros",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Site officiel du livre — Institut de l’Excellence",
+  "description": "Page de partage du livre Jeunes Compagnons, Grands Héros – Institut de l’Excellence",
   "scripts": {
     "build": "node scripts/build.mjs"
-  },
-  "dependencies": {
-    "sharp": "^0.34.4"
   }
 }

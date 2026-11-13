@@ -1,21 +1,12 @@
-import { readFileSync, writeFileSync, mkdirSync, cpSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, cpSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import sharp from 'sharp';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const output = join(root, 'dist');
 mkdirSync(output, { recursive: true });
 cpSync(join(root, 'assets'), join(output, 'assets'), { recursive: true });
-for (const image of ['couverture', 'miniature-og']) {
-  const jpeg = join(output, 'assets', `${image}.jpg`);
-  if (!existsSync(jpeg)) {
-    await sharp(join(root, 'assets', `${image}.svg`)).jpeg({ quality: 88, mozjpeg: true }).toFile(jpeg);
-  }
-}
-if (!existsSync(join(output, 'assets', 'livre.pdf'))) {
-  await import('./generer-pdf.mjs');
-}
+
 const host = process.env.SITE_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL || '';
 const url = host ? (host.startsWith('http://') || host.startsWith('https://') ? host : `https://${host}`).replace(/\/+$/, '') + '/' : '';
 if (url && !url.startsWith('https://')) throw Error('SITE_URL must be HTTPS.');

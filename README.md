@@ -1,25 +1,38 @@
 # Jeunes Compagnons, Grands Héros
 
-Page de partage gratuite du livre de **l’Institut de l’Excellence**, collection « Héritages et modèles ».
+Page de partage officielle du livre de **l’Institut de l’Excellence** (édition commentée, 47 pages).
 
-## Publier sur Vercel
+Le dépôt contient une page web statique responsive et autonome : couverture, aperçu OpenGraph, présentation des huit compagnons et PDF offert au téléchargement. Aucun compte, backend, ni service tiers n'est nécessaire.
 
-1. Importer le dépôt GitHub dans **Vercel → Add New → Project**.
-2. Le projet est statique (**Framework preset : Other**). Build command : `npm run build` ; output directory : `dist` (géré par `vercel.json`).
-3. Cliquer **Deploy**. Les pages, images et PDF sont produits ensemble pendant la compilation.
-4. Facultatif : configurer la variable `SITE_URL=https://votre-domaine.fr`, puis redéployer, pour fixer les métadonnées de partage.
+## Déploiement Vercel
 
-## Fichiers
+1. Dans Vercel, **Add New → Project**, importer ce dépôt GitHub.
+2. Laisser le framework **Other** (site statique). Le fichier `vercel.json` gère la commande de compilation `npm run build` et le dossier de sortie `dist`.
+3. Cliquer sur **Deploy**. Le site et le PDF sont publiés ensemble.
+4. Partager l’URL de production qui sera créée par Vercel.
 
-- `index.html` — page de partage responsive, avec boutons de réseaux sociaux
-- `assets/couverture.svg` — visuel vectoriel de couverture
-- `assets/miniature-og.svg` — miniature vectorielle 1200×630, convertie en JPEG pour l’OpenGraph
-- `assets/favicon.svg` — favicon
-- `manuscrit.md` — texte complet de la réédition commentée
-- `scripts/generer-pdf.mjs` — génère un PDF A5 à partir du manuscrit Markdown
-- `scripts/build.mjs` — assemble le site, les images et le PDF
-- `package.json`, `vercel.json` — configuration du déploiement
+### Prévisualisation des liens (OpenGraph)
 
-**Important :** les visuels et le PDF sont *reconstruits depuis les sources textuelles du dépôt* pendant la compilation. Pour conserver **à l’identique** la couverture illustrée et la maquette PDF originale, ajouter les trois fichiers binaires originaux depuis l’archive fournie dans ChatGPT : `assets/couverture.jpg`, `assets/miniature-og.jpg` et `assets/livre.pdf`. Le build conserve et utilise automatiquement ces fichiers lorsqu'ils sont présents. Le contenu éditorial reste identique dans la version PDF reconstruite, mais la pagination et la mise en page peuvent différer.
+La compilation insère automatiquement l'URL publique dans `og:url`, `og:image`, `twitter:image` et le lien canonique, en priorité à partir de `SITE_URL`, puis de `VERCEL_PROJECT_PRODUCTION_URL`, et enfin de `VERCEL_URL`.
 
-© 2026 Institut de l’Excellence. La diffusion gratuite de l’ouvrage n'exonère pas de la vérification des sources et des droits avant publication.
+Pour utiliser un domaine personnalisé, renseigner `SITE_URL=https://votre-domaine.fr` dans **Vercel → Project → Settings → Environment Variables**, puis redéployer. Vérifier l’aperçu via le [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) ou une publication test WhatsApp.
+
+## Développement local
+
+```bash
+npm run build
+```
+
+Ouvrir le fichier `dist/index.html` après la compilation (les boutons de partage nécessitent une URL HTTP/HTTPS). Les fichiers de sortie sont reconstruits lors des déploiements, ne pas les versionner.
+
+## Arborescence
+
+- `index.html` : page web source
+- `assets/couverture.jpg` : visuel du livre
+- `assets/miniature-og.jpg` : miniature 1200×630
+- `assets/livre.pdf` : ouvrage complet à télécharger
+- `assets/favicon.svg` : icône de l’éditeur
+- `scripts/build.mjs` : préparation des métadonnées OpenGraph
+- `vercel.json` : configuration Vercel
+
+© 2026 Institut de l’Excellence. Veiller à vérifier les droits de diffusion et les sources de l’ouvrage avant une publication publique.
